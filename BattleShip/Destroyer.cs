@@ -4,13 +4,13 @@ using System.Text;
 
 namespace BattleShip
 {
-    public class Destroyer : Ships
+    public class Destroyer : Ship
     {
         public void CreateDestroyer()
         {
             Destroyer destroyer = new Destroyer();
             destroyer.shipName = "Destroyer";
-            destroyer.shipSize = 5;
+            destroyer.shipSize = 2;
             destroyer.isHit = false;
             destroyer.isSunk = false;
         }

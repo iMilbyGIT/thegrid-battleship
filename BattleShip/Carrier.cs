@@ -4,8 +4,9 @@ using System.Text;
 
 namespace BattleShip
 {
-    public class Carrier : Ships
+    public class Carrier : Ship
     {
+
         public void CreateCarrier()
         {
             Carrier carrier = new Carrier();
