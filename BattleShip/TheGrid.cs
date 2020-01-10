@@ -8,9 +8,7 @@ namespace BattleShip
     {
         public static void Run()
         {
-            Carrier.
             TheGrid.CreateGridx2();
-
         }
 
         private static void CreateGridx2()
