@@ -12,12 +12,25 @@ namespace BattleShip
         public int shipSize;
         public bool isHit;
         public bool isSunk;
-        public Cruiser cruiser;
-        public Battleship battleship;
-        public Carrier carrier;
-        public Submarine submarine;
-        public Destroyer destroyer;
-
+        Ship carrier = new Ship("Carrier", 5, false, false);
+        public Ship(string shipName, int shipSize, bool isHit, bool isSunk)
+        {
+            this.shipName = shipName;
+            this.shipSize = shipSize;
+            this.isHit = isHit;
+            this.isSunk = isSunk;
+        }
+        public void TakeDamage()
+        {
+            if (isHit == true)
+            {
+                shipSize--;
+            }
+            if (shipSize == 0)
+            {
+                ShipSunk();
+            }
+        }
         public void ShipHit()
         {
             isHit = true;
